@@ -1,0 +1,14 @@
+package com.company;
+
+public class BP implements StacjaBenzynowa{
+    private int iloscpaliwa;
+    private int paliwoWlitrach=95;
+    @Override
+    public void poziompaliwa() {
+        iloscpaliwa=paliwoWlitrach;
+        iloscBP();
+    }
+    private void iloscBP(){
+        System.out.print(String.format("\nNa stacji BP średnio dystrybutory mają około %s litrów paliwa.",iloscpaliwa));
+    }
+}

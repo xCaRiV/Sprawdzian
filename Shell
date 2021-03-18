@@ -1,0 +1,14 @@
+package com.company;
+
+public class Shell implements StacjaBenzynowa{
+    private int iloscpaliwa;
+    private int paliwoWlitrach=105;
+    @Override
+    public void poziompaliwa() {
+        iloscpaliwa=paliwoWlitrach;
+        iloscShell();
+    }
+    private void iloscShell(){
+        System.out.print(String.format("Na stacji Shell średnio dystrybutory mają około %s litrów paliwa.",iloscpaliwa));
+    }
+}
